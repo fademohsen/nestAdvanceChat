@@ -1,0 +1,44 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+input CreateUsersDto {
+  """email"""
+  email: String!
+
+  """mobileNumber"""
+  mobileNumber: String!
+
+  """name"""
+  name: String!
+
+  """password"""
+  password: String!
+}
+
+type Mutation {
+  createUser(createUserInput: CreateUsersDto!): Users!
+}
+
+type Query {
+  user: [Users!]!
+}
+
+type Users {
+  _id: String!
+
+  """user email"""
+  email: String!
+
+  """user mobileNumber"""
+  mobileNumber: String!
+
+  """user name"""
+  name: String!
+
+  """user password"""
+  password: String!
+
+  """User role"""
+  role: String!
+}
